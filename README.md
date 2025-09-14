@@ -33,6 +33,14 @@ Minimal columns:
 
 ---
 
+# SankeyX — Clinical Pathway
+
+**Storyline:** We predict **treatment escalation / progression (1/0)** from patient event sequences *(consult → test → treatment → follow-up → recovery)*. Using **SankeyX**, we see which **subsequences drive decisions**: patterns like **treatment → test soon after treatment** and **frequent re-staging** dominate **TP**, while **stacked follow-ups without returning to treatment** often cause **FN**; **toxicity-driven interruptions** explain many **FP**. The **dynamic clinical-state timeline** makes shifts visible—*Stable/Rising → Progression Suspected* before TP, *Toxicity Interruptions* before FP, and *Remission* when recovery appears. With a **tunable utility matrix** that heavily penalizes FN, the tool **prioritizes who to act on first**, highlighting cohorts where preventing one miss yields the biggest gain.
+
+
+
+
+
 ## 🚀 Quickstart
 
 ### 1) Install
