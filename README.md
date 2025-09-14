@@ -33,18 +33,18 @@ Minimal columns:
 
 ---
 
-# SankeyX — E-commerce
+# E-commerce case
 
 **Storyline:** We predict **purchase (1/0)** from clickstreams *(browse → detail → add → abandon → purchase)*. **SankeyX** reveals **buyer paths** like **detail → add → purchase** driving **TP**, while **browse↔detail loops → abandon** explain **TN/FN**, and **add ↔ abandon ping-pong** without checkout appears in **FP**. The **dynamic intent timeline** shows shifts—*Hesitant → Exploratory → Comparative → Decisive* for buyers, versus *Hesitant/Exploratory → Drop* for non-buyers. With a **utility matrix** balancing **conversion profit** vs **incentive/remarketing cost**, the tool highlights **where to nudge** (e.g., repeated detail + add within-session) and **where to suppress offers** (long wandering with no add), making **targeting and ROI** decisions explicit.
 
 
 
-# SankeyX — Manufacturing
+# Manufacturing case
 
 **Storyline:** We predict **defect / rework risk (1/0)** from process event sequences *(setup → run → inspection → rework → good_output)*. With **SankeyX**, we see which **subsequences drive alarms**: tight **run → inspection → rework** loops dominate **TP** (true issues), long **run** stretches with **late inspection** explain **FN** (missed defects), and **inspection-only repeats** without rework account for **FP** (over-triggering). The **dynamic process-health timeline** surfaces shifts—*Stable → Drift Suspected → At-Risk → Rework Loop*—and a **tunable utility matrix** (heavy penalty on FN: scrap/field failures; moderate on FP: unnecessary stops) **prioritizes lots/lines** where one intervention yields the biggest **scrap reduction** (e.g., earlier gates, tighter rework criteria).
 
 
-# SankeyX — Clinical Pathway
+# Clinical Pathway case
 
 **Storyline:** We predict **treatment escalation / progression (1/0)** from patient event sequences *(consult → test → treatment → follow-up → recovery)*. Using **SankeyX**, we see which **subsequences drive decisions**: patterns like **treatment → test soon after treatment** and **frequent re-staging** dominate **TP**, while **stacked follow-ups without returning to treatment** often cause **FN**; **toxicity-driven interruptions** explain many **FP**. The **dynamic clinical-state timeline** makes shifts visible—*Stable/Rising → Progression Suspected* before TP, *Toxicity Interruptions* before FP, and *Remission* when recovery appears. With a **tunable utility matrix** that heavily penalizes FN, the tool **prioritizes who to act on first**, highlighting cohorts where preventing one miss yields the biggest gain.
 
